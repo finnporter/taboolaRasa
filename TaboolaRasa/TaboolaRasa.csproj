@@ -16,6 +16,9 @@
     <Content Update="Pages\Participate.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Pages\Newsletter.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Pages\Values.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

@@ -17,22 +17,23 @@
     </environment>
 </head>
 <body>
+    <div>
+        <ul>
+            <li>facebook icon</li>
+            <li>twitter icon</li>
+            <li>pinterest icon</li>
+        </ul>
+    </div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-brand">TaboolaRasa</a>
+            <div class="navbar-header">                
+                <a asp-page="/Index" class="navbar-brand">TaboolaRasa (replace with image)</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div>
                 <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
                     <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="/Blog/Index">Blog</a></li>
+                    <li><a asp-page="/Participate">Participate</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +45,45 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - TaboolaRasa</p>
+            <hr />
+            <h3>Taboola Rasa Newsletter</h3>
+            <div>
+                <p>
+                    Sign up with your email address to stay up to date. We’ll also let you know when we publish our first interviews.
+                </p>
+            </div>
+            <div>
+                <div>
+                <form action="/" method="post">
+                    <input type="text" placeholder="*First Name" />
+                    <input type="text" placeholder="*Last Name" />
+                    <input type="text" placeholder="*Email" />
+                    <button type="submit">Sign me up!</button>
+                </form>
+                <small>We respect your privacy and will never sell your data.</small>
+            </div>
+            <div>
+                <ul>
+                    <li>facebook icon</li>
+                    <li>twitter icon</li>
+                    <li>pinterest icon</li>
+                </ul>
+            </div>
+            </div>            
+            <p>Copyright &copy; Taboola Rasa @DateTime.Now.ToString("yyyy")</p>
+            <p>Taboolarasa.org is brought to you by Andie Katschthaler</p>
+            <p>Tech sponsor: Swat.io — Social Media Management for Teams</p>
+            <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li><a asp-page="/Values">Our Values</a></li>
+                            <li><a asp-page="/Contact">Contact</a></li>
+                            <li><a asp-page="/Newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </footer>
     </div>
 
