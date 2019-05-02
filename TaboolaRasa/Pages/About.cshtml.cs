@@ -13,6 +13,7 @@ namespace TaboolaRasa.Pages
         public void OnGet()
         {
             Message = "Your application description page.";
+            //PageMessages.Add(new PageMessage("We couldn't find what you were looking for", PageMessageType.Error));
         }
     }
 }
